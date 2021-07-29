@@ -1,0 +1,129 @@
+.contact {
+  margin-bottom: 80px;
+  &__title {
+    margin-bottom: 100px;
+    font-family: Open Sans Condensed;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    &--color {
+      font-weight: 300;
+      color: #d1a954;
+    }
+  }
+
+  &__map {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      margin-bottom: 0;
+    }
+
+    &--general {
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        display: none;
+      }
+    }
+
+    &--media {
+      display: none;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        display: block;
+        width: 280px;
+      }
+    }
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      height: 400px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      flex-direction: column;
+    }
+
+    &-numbers {
+      display: flex;
+      flex-direction: column;
+      margin-right: 200px;
+
+      @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+        margin-right: 0;
+      }
+
+      @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+        margin-right: 40px;
+      }
+
+      &-tel {
+        font-family: Open Sans Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        transition: color 0.3s linear;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+          text-align: center;
+        }
+
+        &:hover {
+          color: #d1a954;;
+        }
+      }
+    }
+
+    &-adress {
+      display: flex;
+      flex-direction: column;
+
+      &-item {
+        font-family: Open Sans Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-align: right;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        transition: color 0.3s linear;
+
+        @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+          text-align: center;
+        }
+
+        @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+          text-align: left;
+        }
+
+        &:hover {
+          color: #d1a954;;
+        }
+      }
+    }
+  }
+}

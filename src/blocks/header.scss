@@ -1,0 +1,104 @@
+.header {
+  overflow-y: hidden;
+  height: 100%;
+  background-image: url(./src/images/header_bg.png);
+  background-size: cover;
+
+  &__block {
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 230px;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      display: none;
+    }
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      display: none;
+    }
+  }
+
+  &__title {
+    width: 540px;
+    overflow-y: hidden;
+    margin-top: 248px;
+    margin-right: 125px;
+    font-family: Open Sans Condensed;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 69px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-align: left;
+    color: white;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      margin-right: 0;
+      margin-top: 20px;
+      width: 280px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      margin-right: 0;
+      margin-top: 80px;
+      width: 540px;
+      font-size: 44px;
+      line-height: 57px;
+    }
+  }
+
+  &__article {
+    width: 540px;
+    overflow-y: hidden;
+    margin-top: 30px;
+    font-family: $ffamily;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: white;
+
+    @media (min-width: $small-min-width) and (max-width: $small-max-width) {
+      width: 280px;
+    }
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      margin-top: 80px;
+      width: 600px;
+    }
+  }
+
+  &__button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 160px;
+    border-radius: 0px;
+    font-family: Open Sans Condensed;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    background: #d1a954;
+    transition: background 0.3s linear;
+    margin-bottom: 100px;
+
+    @media (min-width: $medium-min-width) and (max-width: $medium-max-width) {
+      margin-top: 60px;
+    }
+
+    &:hover {
+      background: #d16d54;
+    }
+  }
+}

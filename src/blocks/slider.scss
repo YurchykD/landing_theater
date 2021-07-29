@@ -1,0 +1,68 @@
+.slider {
+  width: 345px;
+  height: 490px;
+  margin: 20px auto;
+  overflow: hidden;
+
+  &__line {
+    width: 1725px;
+    height: 490px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+
+    &-img {
+      border-right: 20px solid rgba(209, 169, 84, 0.85);
+      border-bottom: 15px solid rgba(209, 169, 84, 0.85);
+      width: 345px;
+      height: 485px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 205px;
+
+    &-prev {
+      border: none;
+      background: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: Open Sans Condensed;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      transition: color 0.3s linear;
+
+      &:hover {
+        color: #d16d54;
+        cursor: pointer;
+      }
+    }
+
+    &-next {
+      border: none;
+      background: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: Open Sans Condensed;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: 0.1em;
+      text-align: left;
+      transition: color 0.3s linear;
+
+      &:hover {
+        color: #d16d54;
+        cursor: pointer;
+      }
+    }
+  }
+}
